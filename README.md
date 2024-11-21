@@ -1,6 +1,6 @@
-# Welcome to your Expo app 👋
+# IFTS 16 MOBILE
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Instrucciones de la aplicacion. Es una aplicacion para recibir tips de cuidados y adopcion de gatitos.
 
 ## Get started
 
@@ -16,35 +16,35 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+Requiere tener instalado EXPO en el celular donde se quiere probar. Hay que scannear un codigo QR, o bien enchufar via USB el celular a la computadora, y ejecutar:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+npx expo start --android
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Estructura del proyecto
 
-## Get a fresh project
+1er pantalla- Splash screen con el LOGO del proyecto.
 
-When you're ready, run:
+2da pantalla- Pantalla de bienvenida con dos botones: login y registrar.
 
-```bash
-npm run reset-project
-```
+3er pantalla- Login
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+4ta pantalla- Registro
 
-## Learn more
+5ta pantalla- HOME
 
-To learn more about developing your project with Expo, look at the following resources:
+## Funcionalidades
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+El proyecto hace uso de Context de React, por lo que se puede crear un usuario y contraseña real, el cual se puede luego probar en la pantalla de login.
+Nota: No trabaja con base de datos, pero si es un estado temporal gracias al hook de React.
 
-## Join the community
+Validacion1: Si se crea exitosamente un usuario, el sistema da un alerta de usuario creado exitosamente
 
-Join our community of developers creating universal apps.
+Validacion2: Si el login no es exitoso, el sistema dara un alerta
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Pagina Dinamica: La pantalla HOME muestra el nombre del usuario con el que se hizo login de manera dinamica.
+
+## Lenguaje
+
+Se trabajo con typescript, por lo que todos los componentes son de extension .tsx
+
+
