@@ -58,3 +58,9 @@ La app contiene:
 -handleLogin y handleRegister son dos funcionalidades locales que gracias al userContext me permiten iniciar sesion o crear un usuario. Las funciones verifican que el usuario exista y que las credenciales coincidan.
 
 -handleLogout. Nos permite cerrar sesión y nos redirige al index.
+
+## Validaciones
+
+Validacion1: Si se crea exitosamente un usuario, el sistema da un alerta de usuario creado exitosamente
+
+Validacion2: Si el login no es exitoso, el sistema dara un alerta
